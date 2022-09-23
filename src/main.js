@@ -22,7 +22,6 @@ function fetchAPIData(data) {
   )
     .then((e) => e.json())
     .then((e) => {
-      console.log(e.results);
       e.results?.forEach((e) => renderCard(e));
     })
     .catch((error) =>
@@ -51,7 +50,6 @@ window.addEventListener("load", () =>
   fetch("https://rickandmortyapi.com/api/character")
     .then((e) => e.json())
     .then((e) => {
-      console.log(e.results);
-      e.results?.forEach((e) => renderCard(e));
+      e.results.forEach((e) => renderCard(e));
     })
 );
