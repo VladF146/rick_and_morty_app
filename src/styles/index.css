@@ -31,6 +31,10 @@ button {
   border-radius: 5px;
 }
 
+button:hover {
+  background-color: rgb(212, 199, 176);
+}
+
 ul {
   width: 100%;
 }
